@@ -1,0 +1,24 @@
+<main class="pageProduct">
+    {{#with product}}
+        <div class="product">
+            <a class="linkProduct" href="/product/{{id}}">
+                <span>
+                    {{#if img}}
+                        <img src={{img}} alt="Imagem XPTO">
+                    {{else}}
+                        <div class="noneImage"></div>
+                    {{/if}}
+                    <div class="info">
+                        <p>Produto: {{name}}</p>
+                        <p>Catergoria: {{category}}</p>
+                        <span>
+                            <p>QTD: {{qty}}</p>
+                            <p>{{un}}</p>    
+                        </span>
+                    </div>
+                    <small>#{{id}}</small>
+                </span>
+            </a>    
+        </div>
+    {{/with}}
+</main>
